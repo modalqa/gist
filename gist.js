@@ -28,6 +28,21 @@ test('see all', async t => {
     .click(page.seeAll)
    
 });
+
+test('edit', async t => {
+    await t 
+    .maximizeWindow()
+    .typeText(page.inputEmail, 'depfaris@gmail.com')
+    .typeText(page.inputPass, 'Cermat123')
+    .click(page.buttonLogin)
+    .navigateTo('https://gist.github.com/')
+    .click(page.pilihGist)
+    .click(page.clickBtEdit)
+    .typeText(page.inputDesc, 'faris test')
+    .click(page.clickUpdate)
+   
+});
+
 test('delete', async t => {
     await t 
     .maximizeWindow()
