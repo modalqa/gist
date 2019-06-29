@@ -12,7 +12,7 @@ export default class Page {
         this.seeAll = Selector('a').withText('See all of your gists');
         this.clickBtEdit = Selector('a').withText('Edit');
         this.inputDesc = Selector('#gists > input');
-        this.clickUpdate = Selector('#edit_gist_96978109 > div > div.form-actions > button');
+        this.clickUpdate = Selector('button').withText('Update public gist');
         this.buttonDelete = Selector('//*[@id="gist-pjax-container"]/div[1]/div/div[1]/ul/li[2]/form/button')
         
        

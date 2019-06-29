@@ -36,6 +36,7 @@ test('edit', async t => {
     .typeText(page.inputPass, 'Cermat123')
     .click(page.buttonLogin)
     .navigateTo('https://gist.github.com/')
+    .click(page.seeAll)
     .click(page.pilihGist)
     .click(page.clickBtEdit)
     .typeText(page.inputDesc, 'faris test')
